@@ -1,0 +1,15 @@
+sku,warehouse,category,quantity,unit_price,reorder_level,last_counted,active
+SKU-1001,NORTH,Tools,45,249.50,10,2026-11-01,true
+SKU-1002,NORTH,Office,120,39.95,30,2026-11-01,true
+SKU-1003,SOUTH,Electronics,-4,1299.00,8,2026-11-02,true
+SKU-1004,WEST,Storage,65,-189.00,15,2026-11-02,true
+SKU-1005,NORTH,Tools,18,599.90,5,2026-02-30,true
+SKU-1006,SOUTH,Office,,12.50,50,2026-11-03,true
+SKU-1007,WEST,Electronics,12,2499.00,4,2026-11-03,yes
+SKU-1008,EAST,Storage,86,79.00,20,2026-11-04,true
+BAD-SKU,SOUTH,Tools,33,349.00,10,2026-11-04,true
+SKU-1010,WEST,Office,many,29.95,30,2026-11-04,true
+SKU-1011,NORTH,Electronics,8,,3,2026-11-05,true
+SKU-1012,SOUTH,Storage,0,149.00,15,2026-11-05,false
+SKU-1001,NORTH,Tools,45,249.50,10,2026-11-01,true
+SKU-1013,WEST,Furniture,20,999.00,5,2026-11-06,true

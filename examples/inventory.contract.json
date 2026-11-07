@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "name": "Warehouse inventory v1",
+  "allow_extra_columns": false,
+  "unique_rows": true,
+  "unique_keys": [["warehouse", "sku"]],
+  "null_values": ["", "N/A"],
+  "columns": {
+    "sku": {"type": "string", "required": true, "pattern": "SKU-[0-9]{4}"},
+    "warehouse": {"type": "string", "required": true, "enum": ["NORTH", "SOUTH", "WEST"]},
+    "category": {"type": "string", "required": true, "enum": ["Tools", "Office", "Electronics", "Storage"]},
+    "quantity": {"type": "integer", "required": true, "min": 0, "max": 10000},
+    "unit_price": {"type": "number", "required": true, "min": 0, "max": 50000},
+    "reorder_level": {"type": "integer", "required": true, "min": 0},
+    "last_counted": {"type": "date", "required": true},
+    "active": {"type": "boolean", "required": true}
+  }
+}

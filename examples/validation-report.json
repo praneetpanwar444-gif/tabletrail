@@ -1,0 +1,401 @@
+{
+  "report_version": 1,
+  "kind": "validation",
+  "source": "inventory_with_issues.csv",
+  "contract": "Warehouse inventory v1",
+  "rows": 14,
+  "column_count": 8,
+  "duplicate_rows": 1,
+  "columns": [
+    {
+      "name": "sku",
+      "inferred_type": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "distinct_count": 13,
+      "type_counts": {
+        "string": 14
+      },
+      "top_values": [
+        {
+          "value": "SKU-1001",
+          "count": 2
+        },
+        {
+          "value": "BAD-SKU",
+          "count": 1
+        },
+        {
+          "value": "SKU-1002",
+          "count": 1
+        },
+        {
+          "value": "SKU-1003",
+          "count": 1
+        },
+        {
+          "value": "SKU-1004",
+          "count": 1
+        }
+      ],
+      "numeric_count": 0,
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    },
+    {
+      "name": "warehouse",
+      "inferred_type": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "distinct_count": 4,
+      "type_counts": {
+        "string": 14
+      },
+      "top_values": [
+        {
+          "value": "NORTH",
+          "count": 5
+        },
+        {
+          "value": "SOUTH",
+          "count": 4
+        },
+        {
+          "value": "WEST",
+          "count": 4
+        },
+        {
+          "value": "EAST",
+          "count": 1
+        }
+      ],
+      "numeric_count": 0,
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    },
+    {
+      "name": "category",
+      "inferred_type": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "distinct_count": 5,
+      "type_counts": {
+        "string": 14
+      },
+      "top_values": [
+        {
+          "value": "Tools",
+          "count": 4
+        },
+        {
+          "value": "Electronics",
+          "count": 3
+        },
+        {
+          "value": "Office",
+          "count": 3
+        },
+        {
+          "value": "Storage",
+          "count": 3
+        },
+        {
+          "value": "Furniture",
+          "count": 1
+        }
+      ],
+      "numeric_count": 0,
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    },
+    {
+      "name": "quantity",
+      "inferred_type": "mixed",
+      "null_count": 1,
+      "null_rate": 0.07142857142857142,
+      "distinct_count": 12,
+      "type_counts": {
+        "integer": 12,
+        "string": 1
+      },
+      "top_values": [
+        {
+          "value": "45",
+          "count": 2
+        },
+        {
+          "value": "-4",
+          "count": 1
+        },
+        {
+          "value": "0",
+          "count": 1
+        },
+        {
+          "value": "12",
+          "count": 1
+        },
+        {
+          "value": "120",
+          "count": 1
+        }
+      ],
+      "numeric_count": 12,
+      "numeric_min": "-4",
+      "numeric_max": "120",
+      "numeric_mean": "37.33333333333333333333333333"
+    },
+    {
+      "name": "unit_price",
+      "inferred_type": "number",
+      "null_count": 1,
+      "null_rate": 0.07142857142857142,
+      "distinct_count": 12,
+      "type_counts": {
+        "number": 13
+      },
+      "top_values": [
+        {
+          "value": "249.50",
+          "count": 2
+        },
+        {
+          "value": "-189.00",
+          "count": 1
+        },
+        {
+          "value": "12.50",
+          "count": 1
+        },
+        {
+          "value": "1299.00",
+          "count": 1
+        },
+        {
+          "value": "149.00",
+          "count": 1
+        }
+      ],
+      "numeric_count": 13,
+      "numeric_min": "-189.00",
+      "numeric_max": "2499.00",
+      "numeric_mean": "489.7153846153846153846153846"
+    },
+    {
+      "name": "reorder_level",
+      "inferred_type": "integer",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "distinct_count": 9,
+      "type_counts": {
+        "integer": 14
+      },
+      "top_values": [
+        {
+          "value": "10",
+          "count": 3
+        },
+        {
+          "value": "15",
+          "count": 2
+        },
+        {
+          "value": "30",
+          "count": 2
+        },
+        {
+          "value": "5",
+          "count": 2
+        },
+        {
+          "value": "20",
+          "count": 1
+        }
+      ],
+      "numeric_count": 14,
+      "numeric_min": "3",
+      "numeric_max": "50",
+      "numeric_mean": "15.35714285714285714285714286"
+    },
+    {
+      "name": "last_counted",
+      "inferred_type": "mixed",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "distinct_count": 7,
+      "type_counts": {
+        "date": 13,
+        "string": 1
+      },
+      "top_values": [
+        {
+          "value": "2026-11-01",
+          "count": 3
+        },
+        {
+          "value": "2026-11-04",
+          "count": 3
+        },
+        {
+          "value": "2026-11-02",
+          "count": 2
+        },
+        {
+          "value": "2026-11-03",
+          "count": 2
+        },
+        {
+          "value": "2026-11-05",
+          "count": 2
+        }
+      ],
+      "numeric_count": 0,
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    },
+    {
+      "name": "active",
+      "inferred_type": "mixed",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "distinct_count": 3,
+      "type_counts": {
+        "boolean": 13,
+        "string": 1
+      },
+      "top_values": [
+        {
+          "value": "true",
+          "count": 12
+        },
+        {
+          "value": "false",
+          "count": 1
+        },
+        {
+          "value": "yes",
+          "count": 1
+        }
+      ],
+      "numeric_count": 0,
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    }
+  ],
+  "status": "fail",
+  "failed_records": 11,
+  "issue_count": 12,
+  "issue_counts": {
+    "duplicate_row": 1,
+    "enum": 2,
+    "min": 2,
+    "pattern": 1,
+    "required": 2,
+    "type": 3,
+    "unique_key": 1
+  },
+  "issues": [
+    {
+      "record": 4,
+      "line": 4,
+      "column": "quantity",
+      "code": "min",
+      "message": "Must be at least 0",
+      "value": "-4"
+    },
+    {
+      "record": 5,
+      "line": 5,
+      "column": "unit_price",
+      "code": "min",
+      "message": "Must be at least 0",
+      "value": "-189.00"
+    },
+    {
+      "record": 6,
+      "line": 6,
+      "column": "last_counted",
+      "code": "type",
+      "message": "Expected date",
+      "value": "2026-02-30"
+    },
+    {
+      "record": 7,
+      "line": 7,
+      "column": "quantity",
+      "code": "required",
+      "message": "Value must not be missing",
+      "value": ""
+    },
+    {
+      "record": 8,
+      "line": 8,
+      "column": "active",
+      "code": "type",
+      "message": "Expected boolean",
+      "value": "yes"
+    },
+    {
+      "record": 9,
+      "line": 9,
+      "column": "warehouse",
+      "code": "enum",
+      "message": "Value is outside the allowed set",
+      "value": "EAST"
+    },
+    {
+      "record": 10,
+      "line": 10,
+      "column": "sku",
+      "code": "pattern",
+      "message": "Value does not fully match the required pattern",
+      "value": "BAD-SKU"
+    },
+    {
+      "record": 11,
+      "line": 11,
+      "column": "quantity",
+      "code": "type",
+      "message": "Expected integer",
+      "value": "many"
+    },
+    {
+      "record": 12,
+      "line": 12,
+      "column": "unit_price",
+      "code": "required",
+      "message": "Value must not be missing",
+      "value": ""
+    },
+    {
+      "record": 14,
+      "line": 14,
+      "column": null,
+      "code": "duplicate_row",
+      "message": "Same values as record 2",
+      "value": null
+    },
+    {
+      "record": 14,
+      "line": 14,
+      "column": "warehouse, sku",
+      "code": "unique_key",
+      "message": "Composite key already used in record 2",
+      "value": null
+    },
+    {
+      "record": 15,
+      "line": 15,
+      "column": "category",
+      "code": "enum",
+      "message": "Value is outside the allowed set",
+      "value": "Furniture"
+    }
+  ],
+  "omitted_issues": 0
+}

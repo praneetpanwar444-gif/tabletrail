@@ -1,0 +1,320 @@
+{
+  "report_version": 1,
+  "kind": "comparison",
+  "source": "inventory_next.csv",
+  "baseline": "inventory.csv",
+  "rows": 12,
+  "baseline_rows": 12,
+  "column_count": 9,
+  "status": "fail",
+  "thresholds": {
+    "null_rate_increase": 0.05,
+    "relative_mean_change": 0.25,
+    "relative_row_change": 0.5
+  },
+  "changes": [
+    {
+      "column": "quantity",
+      "code": "mean_shift",
+      "before": "64.58333333333333333333333333",
+      "after": "682",
+      "message": "Numeric mean changed beyond threshold"
+    },
+    {
+      "column": "quantity",
+      "code": "missing_increase",
+      "before": 0.0,
+      "after": 0.16666666666666666,
+      "message": "Missing fraction increased beyond threshold"
+    },
+    {
+      "column": "supplier_tier",
+      "code": "added_column",
+      "before": "missing",
+      "after": "present",
+      "message": "New column appeared"
+    },
+    {
+      "column": "unit_price",
+      "code": "mean_shift",
+      "before": "791.2333333333333333333333333",
+      "after": "1582.466666666666666666666667",
+      "message": "Numeric mean changed beyond threshold"
+    }
+  ],
+  "change_count": 4,
+  "columns": [
+    {
+      "name": "sku",
+      "inferred_type": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "distinct_count": 12,
+      "type_counts": {
+        "string": 12
+      },
+      "top_values": [
+        {
+          "value": "SKU-1001",
+          "count": 1
+        },
+        {
+          "value": "SKU-1002",
+          "count": 1
+        },
+        {
+          "value": "SKU-1003",
+          "count": 1
+        },
+        {
+          "value": "SKU-1004",
+          "count": 1
+        },
+        {
+          "value": "SKU-1005",
+          "count": 1
+        }
+      ],
+      "numeric_count": 0,
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    },
+    {
+      "name": "warehouse",
+      "inferred_type": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "distinct_count": 3,
+      "type_counts": {
+        "string": 12
+      },
+      "top_values": [
+        {
+          "value": "NORTH",
+          "count": 5
+        },
+        {
+          "value": "SOUTH",
+          "count": 4
+        },
+        {
+          "value": "WEST",
+          "count": 3
+        }
+      ],
+      "numeric_count": 0,
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    },
+    {
+      "name": "category",
+      "inferred_type": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "distinct_count": 4,
+      "type_counts": {
+        "string": 12
+      },
+      "top_values": [
+        {
+          "value": "Electronics",
+          "count": 3
+        },
+        {
+          "value": "Office",
+          "count": 3
+        },
+        {
+          "value": "Storage",
+          "count": 3
+        },
+        {
+          "value": "Tools",
+          "count": 3
+        }
+      ],
+      "numeric_count": 0,
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    },
+    {
+      "name": "quantity",
+      "inferred_type": "integer",
+      "null_count": 2,
+      "null_rate": 0.16666666666666666,
+      "distinct_count": 10,
+      "type_counts": {
+        "integer": 10
+      },
+      "top_values": [
+        {
+          "value": "0",
+          "count": 1
+        },
+        {
+          "value": "120",
+          "count": 1
+        },
+        {
+          "value": "1200",
+          "count": 1
+        },
+        {
+          "value": "1400",
+          "count": 1
+        },
+        {
+          "value": "180",
+          "count": 1
+        }
+      ],
+      "numeric_count": 10,
+      "numeric_min": "0",
+      "numeric_max": "2200",
+      "numeric_mean": "682"
+    },
+    {
+      "name": "unit_price",
+      "inferred_type": "number",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "distinct_count": 12,
+      "type_counts": {
+        "number": 12
+      },
+      "top_values": [
+        {
+          "value": "1199.80",
+          "count": 1
+        },
+        {
+          "value": "158.00",
+          "count": 1
+        },
+        {
+          "value": "25.00",
+          "count": 1
+        },
+        {
+          "value": "2598.00",
+          "count": 1
+        },
+        {
+          "value": "298.00",
+          "count": 1
+        }
+      ],
+      "numeric_count": 12,
+      "numeric_min": "25.00",
+      "numeric_max": "7998.00",
+      "numeric_mean": "1582.466666666666666666666667"
+    },
+    {
+      "name": "reorder_level",
+      "inferred_type": "integer",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "distinct_count": 9,
+      "type_counts": {
+        "integer": 12
+      },
+      "top_values": [
+        {
+          "value": "10",
+          "count": 2
+        },
+        {
+          "value": "15",
+          "count": 2
+        },
+        {
+          "value": "30",
+          "count": 2
+        },
+        {
+          "value": "20",
+          "count": 1
+        },
+        {
+          "value": "3",
+          "count": 1
+        }
+      ],
+      "numeric_count": 12,
+      "numeric_min": "3",
+      "numeric_max": "50",
+      "numeric_mean": "16.66666666666666666666666667"
+    },
+    {
+      "name": "last_counted",
+      "inferred_type": "date",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "distinct_count": 1,
+      "type_counts": {
+        "date": 12
+      },
+      "top_values": [
+        {
+          "value": "2026-11-06",
+          "count": 12
+        }
+      ],
+      "numeric_count": 0,
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    },
+    {
+      "name": "active",
+      "inferred_type": "boolean",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "distinct_count": 2,
+      "type_counts": {
+        "boolean": 12
+      },
+      "top_values": [
+        {
+          "value": "true",
+          "count": 11
+        },
+        {
+          "value": "false",
+          "count": 1
+        }
+      ],
+      "numeric_count": 0,
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    },
+    {
+      "name": "supplier_tier",
+      "inferred_type": "string",
+      "null_count": 0,
+      "null_rate": 0.0,
+      "distinct_count": 2,
+      "type_counts": {
+        "string": 12
+      },
+      "top_values": [
+        {
+          "value": "A",
+          "count": 6
+        },
+        {
+          "value": "B",
+          "count": 6
+        }
+      ],
+      "numeric_count": 0,
+      "numeric_min": null,
+      "numeric_max": null,
+      "numeric_mean": null
+    }
+  ]
+}
