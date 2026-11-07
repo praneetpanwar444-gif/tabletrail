@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tabletrail"
+version = "0.1.0"
+description = "Offline CSV profiling, data contracts, and dataset drift reports"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Praneet Choudhary"}]
+dependencies = []
+keywords = ["csv", "data-quality", "validation", "cli", "data-contracts"]
+
+[project.scripts]
+tabletrail = "tabletrail.cli:main"
+
+[project.urls]
+Repository = "https://github.com/praneetpanwar444-gif/tabletrail"
+Issues = "https://github.com/praneetpanwar444-gif/tabletrail/issues"
+
+[tool.setuptools.packages.find]
+include = ["tabletrail*"]
+
+[tool.setuptools.package-data]
+tabletrail = ["report.css", "report.js"]
